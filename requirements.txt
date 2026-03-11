@@ -1,0 +1,9 @@
+splink
+pandas
+numpy
+scikit-learn
+plotly
+jupyter
+fastapi
+uvicorn
+jinja2

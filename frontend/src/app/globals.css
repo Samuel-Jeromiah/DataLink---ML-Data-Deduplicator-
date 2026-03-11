@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  --color-brand: hsl(252, 100%, 65%);
+  --color-brand-glow: hsla(252, 100%, 65%, 0.5);
+  --color-background: hsl(240, 10%, 4%);
+  --color-foreground: hsl(0, 0%, 98%);
+  
+  --color-card: hsla(240, 10%, 10%, 0.6);
+  --color-card-border: hsla(0, 0%, 100%, 0.08);
+  
+  --color-success: hsl(142, 70%, 50%);
+  --color-warning: hsl(48, 96%, 53%);
+  --color-danger: hsl(0, 84%, 60%);
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-[var(--color-card)] backdrop-blur-xl border border-[var(--color-card-border)] shadow-xl;
+  }
+  .glass-hover {
+    @apply hover:bg-white/5 transition-colors duration-300;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand to-purple-400;
+  }
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), sans-serif;
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(168, 85, 247, 0.08), transparent 25%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
