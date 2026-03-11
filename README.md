@@ -11,7 +11,9 @@
 DataLink is a comprehensive, production-ready data science web application demonstrating advanced record linkage and data profiling techniques. It wraps an end-to-end Python machine learning pipeline—bridging deterministic DuckDB geometries, probabilistic Expectation-Maximisation (Splink), and Scikit-Learn ensembles—into a stunning, interactive Next.js dashboard. 
 
 ## Live Demo
-Check out the live application here: [https://your-vercel-deployment-url-here.vercel.app](https://your-vercel-deployment-url-here.vercel.app)
+Check out the live application here: [https://data-link-ml-data-deduplicator.vercel.app/](https://data-link-ml-data-deduplicator.vercel.app/)
+
+![DataLink Dashboard](frontend/public/live_deployment.png)
 
 ## What is Entity Resolution?
 Entity Resolution (also known as Record Linkage or Deduplication) is the core algorithmic challenge of identifying records that refer to the same real-world entity across disparate datasets, especially when these datasets lack a common unique identifier (like a unified social security number).
